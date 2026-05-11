@@ -163,7 +163,6 @@ class MakeDatasetArgs(BaseConfigModel):
     )
     clean_batch_size: int = Field(10, description="Batch size for data cleaning")
     vision_api: VisionApiConfig = Field(VisionApiConfig())
-    pure_text: bool = Field(False, description="Whether to use pure text mode (disable vision encoder)")
 
 
 class QuantizationArgs(BaseConfigModel):
